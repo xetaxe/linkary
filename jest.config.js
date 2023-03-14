@@ -10,7 +10,9 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   // Add more setup options before each test is run
 //   setupFilesAfterEnv: ['jest.setup.js'],
-  moduleDirectories: ['node_modules'],
+  moduleDirectories: ['node_modules',
+  '.src/utils',
+  __dirname ],
   moduleNameMapper: {
     '^~/(.*)$': '<rootDir>/src/$1',
   },
